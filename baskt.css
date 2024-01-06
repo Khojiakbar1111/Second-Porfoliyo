@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteiner */
+.conteiner {
+    width: 1440px;
+    height: auto;
+    background-image: url(./image/restaurant\ 1.png);
+}
+
+h5 {
+    position: absolute;
+    top: 177px;
+    right: 200px;
+    font-size: 25px;
+    color:black;
+    z-index: 20;
+}
+
+/* Conteiner end*/
+
+.section {
+    width: 100%;
+    display: flex;
+}
+
+/* Navlist style  */
+.navlist {
+    padding: 90px 0 0 43px;
+}
+
+.navAhref {
+    width: 132px;
+    height: 600.999px;
+    border-radius: 24px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navAhref>p {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a>button>i {
+    color: #000;
+    font-size: 34px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Navlist style  end*/
+
+
+/* Basket Style  */
+.parBasket {
+    padding: 70px 0 0 70px;
+}
+
+.basket1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background: #F1D5BB;
+    border-radius: 20px;
+}
+
+.card1 {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card1>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card1>p {
+    font-size: 30px;
+}
+
+.card1>h3 {
+    font-size: 22px;
+}
+
+.card1>b {
+    font-size: 22px;
+}
+
+.count {
+    display: flex;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.count>p {
+    font-size: 20px;
+    color: white;
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+.minus {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+.delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete>i {
+    font-size: 16px;
+}
+
+/* Basket Style end */
+
+/* Total Product's style */
+.totalProduct {
+    width: 343px;
+    height: 426px;
+    flex-shrink: 0;
+    background: #F1D5BB;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+}
+
+.products{
+    padding: 22px 40px;
+}
+
+.products>p{
+    color: #000;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.products>h2{
+    color: rgba(0, 0, 0, 0.80);
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 20px;
+}
+
+.products>button{
+    width: 165px;
+height: 40px;
+color: white;
+font-size:15px ;
+font-weight: 600;
+border: none;
+flex-shrink: 0;
+background-color: black;
+margin-top: 20px;
+margin-bottom: 10px;
+border-radius: 10px;
+}
+
+.promoCode{
+    padding: 0px 40px 36px;
+  display: flex;
+  flex-direction: column;
+background-color: white;
+border-radius: 0 0 20px 20px;
+}
+
+.promoCode>p{
+    color: #000;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 30px;
+}
+
+.promoCode>input{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.promoCode>button{
+    margin-top: 20px;
+    width: 166px;
+height: 48px;
+flex-shrink: 0;
+background-color: black;
+color: white;
+font-size: 20px;
+font-weight: 600;
+border-radius: 10px;
+}
+/* Total Product's style end */
