@@ -7,7 +7,6 @@ function basketBaza() {
     basket1.innerHTML = '';
     let umumiyNarx = 0;
     let totalProduct = 0;
-
     basketData.map((item) => {
         basket1.innerHTML += `
         <div class ="card1">
@@ -28,7 +27,7 @@ function basketBaza() {
     });
 
     umumiyNarx = totalProduct;
-    totalPrice.innerHTML = umumiyNarx + '$';
+     totalPrice.innerHTML = umumiyNarx.toFixed(2) + '$';
 }
 
 function plus(id) {
