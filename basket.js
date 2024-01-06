@@ -1,5 +1,5 @@
-const conteiner = document.querySelector('.conteiner')
-const basket1 = document.querySelector('.basket1')
+const conteiner = document.querySelector('.conteiner');
+const basket1 = document.querySelector('.basket1');
 let totalPrice = document.querySelector('.totalPrice');
 const basketData = JSON.parse(localStorage.getItem('basket')) || [];
 
@@ -7,6 +7,7 @@ function basketBaza() {
     basket1.innerHTML = '';
     let umumiyNarx = 0;
     let totalProduct = 0;
+
     basketData.map((item) => {
         basket1.innerHTML += `
         <div class ="card1">
@@ -22,11 +23,11 @@ function basketBaza() {
          <button class ="delete" onclick ="deletee(${item.id})"><i class="fa-solid fa-trash"></i></button>
         </div>
         `;
-        umumiyNarx += item.narxi * item.son;
-        totalProduct += (item.narxi - item.narxi / 100 * item.discount)
-        umumiyNarx = totalProduct
+
+        totalProduct += (item.narxi - item.narxi / 100 * item.discount) * item.son;
     });
 
+    umumiyNarx = totalProduct;
     totalPrice.innerHTML = umumiyNarx + '$';
 }
 
